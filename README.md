@@ -14,5 +14,6 @@ jDeas is a text editor with a modern UI design. It's capable of running java and
 
 ## How to use
 ### Installation
+Download the project, and open it as a Maven project in your favorite IDE
 
 
