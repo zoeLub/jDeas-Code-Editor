@@ -4,7 +4,7 @@
 ---
 ## Description
 
-jDeas is a text editor with a modern UI design. It's capable of running java and html files.
+jDeas is a text editor with a modern UI design. It currently supports html, css, text, and java files. It provides java and html syntax highlighting, It's capable of running java and html files.
 
 ## Technologies
 
@@ -14,6 +14,6 @@ jDeas is a text editor with a modern UI design. It's capable of running java and
 
 ## How to use
 ### Installation
-Download the project, and open it as a Maven project in your favorite IDE
+Download the project, and open it as a Maven project in your favorite IDE.
 
 
