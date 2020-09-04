@@ -1,0 +1,445 @@
+/**
+ * @author Zoe Lubanza
+ */
+
+.progress-bar {
+    -fx-indeterminate-bar-length: 60;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: true;
+    -fx-indeterminate-bar-animation-time: 2;
+}
+.progress-bar > .bar {
+    -fx-background-color: #7f8287;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0.75em;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #2a2a2b;
+    -fx-background-insets: 0, 0 0 0 0, 0 0 0 0;
+    -fx-background-radius: 0, 0, 0;
+}
+
+.scroll-bar{
+    -fx-background-color: #4D4C4F;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: rgba(0,0,0,0.0);
+    -fx-border-color: transparent;
+    -fx-border-radius: 20px;
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-padding: 0 0 0 0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-padding: 0 0 0 0;
+}
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #666568;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0, 0, 0;
+}
+
+.scroll-bar:vertical .thumb:hover,
+.scroll-bar:vertical .thumb:hover{
+    -fx-background-color: #7f8287;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0, 0, 0;
+}
+
+.scroll-bar:vertical .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed{
+    -fx-background-color: #7f8287;
+    -fx-background-radius: 20px;
+    -fx-background-insets: 0, 0, 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar.decrement-arrow{
+    -fx-shape: null;
+    -fx-pref-height: 0;
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow{
+    -fx-shape: null;
+    -fx-pref-height: 0;
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+.combo-box{
+    -fx-background-color: #373737;
+    -fx-text-fill: #A5A2AE;
+}
+
+.combo-box .cell{
+    -fx-text-fill: #A5A2AE;
+    -fx-background-color: #373737;
+}
+
+.combo-box .cell:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #5075b4;
+}
+
+/*
+.list-cell{
+    -fx-border-style: solid;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #3C3C3C
+}
+*/
+
+.label{
+    -fx-text-fill: #A5A2AE;
+}
+
+
+/*
+*
+*   TEXT FIELDS
+*
+ */
+
+.text-field{
+    -fx-background-color: #2F2F30;
+    -fx-text-fill: #A5A2AE;
+    -fx-border-radius: 3;
+    -fx-border-color: #414141;
+}
+
+.text-field:focused{
+    -fx-border-radius: 4;
+    -fx-border-color: #5075b4;
+
+}
+
+.menu-item{
+    -fx-background-color: #2F2F30;
+    -fx-text-fill: white;
+}
+.menu-item:hover{
+    -fx-background-color: #5075b4;
+}
+
+/**
+*
+*   MainStage class
+*
+ */
+
+#notification-bar{
+    -fx-background-color: #2F2F30;
+    -fx-padding: 2 5 2 5;
+    -fx-border-style: solid;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #454546;
+}
+
+#notification{
+    -fx-font-weight: bold;
+    -fx-font-family: Calibri;
+    -fx-font-size: 14;
+}
+
+/**
+*
+*   HomeUI class
+*
+**/
+
+#home-buttons{          /*Recent, new, open,save,saveAs,print buttons*/
+    -fx-background-color: null;
+    -fx-text-fill: #A5A2AE;
+    -fx-pref-height: 45;
+    -fx-padding: 0 0 0 25;
+}
+
+#home-buttons:hover{
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: #3675a4;
+    -fx-background-color: null;
+}
+
+#home-buttons:focused{
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: #3675a4;
+    -fx-background-color: null;
+}
+
+.list-view{
+    -fx-border-color: null;
+    -fx-background-color: null;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 0 0;
+}
+
+.list-view .list-cell{
+    -fx-background-color: #363637;
+    -fx-text-fill: #A5A2AE;
+    //-fx-font-size: 25px;
+}
+
+.list-view .list-cell:hover{
+    -fx-background-color: #3b3b3c;
+    -fx-border-color: #3C3C3C;
+    -fx-text-fill: #A5A2AE;
+    -fx-border-style: dashed;
+    -fx-border-width: 0 0 2 0;
+}
+
+.list-view .list-cell:focused{
+    -fx-background-color: #313132;
+}
+
+#greetingPane{
+    //-fx-background-color: linear-gradient(to top,#39393a, #2F2F30, #2F2F30);
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+#iconPane{
+    -fx-background-color: #2F2F30;
+}
+#listPane{
+    -fx-background-color: #2F2F30;
+    -fx-border-color: #3C3C3C;
+    -fx-border-width: 1 1 1 1;
+}
+
+#recentPane{
+    //-fx-background-color: #2F2F30;
+    -fx-background-color: linear-gradient(to bottom,#2F2F30, #383839, #363637,#2F2F30,#2F2F30,#2F2F30,#2F2F30,#2F2F30,#2F2F30,#2F2F30);
+}
+
+#leftPane{
+    -fx-background-color: #2F2F30;
+}
+
+#homeUIcontentPane{
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+#greetingMsg{
+    -fx-text-fill: #A5A2AE;
+    -fx-font-size: 20px;
+}
+
+/**
+*
+*   MainUI class
+*
+**/
+
+.split-pane > .split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+.split-pane{
+    -fx-background-color: rgba(0,0,0,0.0);
+    -fx-padding: 0 0 0 0;
+}
+
+.tab-pane .tab-header-area .tab-header-background{
+    -fx-background-color: rgba(35,35,35,0.9);
+}
+
+.tab
+{
+    -fx-background-color: #404041;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-padding: 3 3 3 3;
+}
+
+.tab:selected
+{
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #3675a4;
+    -fx-background-color: #2f2f30;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.tab-label
+{
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER;
+    -fx-text-fill: white;
+}
+
+.code-area .scroll-pane{
+    -fx-background-color: transparent;
+}
+
+.code-area{
+    -fx-background-color: rgba(40,40,40,0.6);
+    -fx-font-size: 14;
+    -fx-padding: 5 10 0 0;
+}
+
+#console{
+    -fx-background-color: black;
+}
+
+#error{
+    -fx-background-color: black;
+}
+
+#console .text{
+    -fx-fill: green;
+    -fx-padding: 10 10 10 10;
+}
+
+#error .text{
+    -fx-fill: red;
+    -fx-padding: 10 10 10 10;
+}
+
+.code-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+.code-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+#myMenus:hover{         /*File,home,insert,view,help Menus*/
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #3675a4;
+}
+
+#myMenus:focused{         /*File,home,insert,view,help Menus*/
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #3675a4;
+}
+
+#myTab-pane{
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+#mainUicontentPane{
+    -fx-background-color: rgba(0,0,0,0.0);
+}
+
+#menuBarPane{
+    -fx-background-color: #2F2F30;
+}
+
+#menuItemsPane{
+    -fx-background-color: #2F2F30;
+}
+
+#topPane{
+    -fx-background-color: #2F2F30;
+    -fx-background-radius: 0 0 0 0;
+}
+
+#line-count{
+    -fx-text-fill: rgb(114,114,114);
+    -fx-background-color: #2F2F30;
+    -fx-border-style: solid;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #3C3C3C;
+    -fx-pref-width: 50px;
+}
+
+#closeConsole{
+    -fx-background-color: #3C3C3C;
+    -fx-text-fill: #A5A2AE;
+}
+
+#closeConsole:hover{
+    -fx-background-color: #303030;
+    -fx-text-fill: white;
+}
+
+/*
+*   NewFile_Stage class
+*/
+
+#panes{
+    -fx-background-color: #2F2F30;
+}
+
+#radioBtns{
+    -fx-text-fill: #A5A2AE;
+}
+#new-file-stage-button{
+    -fx-background-color: #39393a;
+}
+
+
+/**
+*
+*   MenuItems_View class
+ */
+
+#menuItems{     /*fullScreen, switch tabs,...*/
+    -fx-padding: 2 2 2 2;
+    -fx-pref-width: 110px;
+}
+
+#menuItems:hover{
+    -fx-background-color: #444445;
+    -fx-background-radius: 5;
+   }
+
+#copy-paste-cut{
+    -fx-padding: 2 2 2 2;
+    -fx-pref-width: 35px;
+}
+
+#undoRedo-pane, #copyPaste-pane, #font-pane, #find-pane{
+    -fx-border-style: solid;
+    -fx-border-width: 0 1 0 0;
+    -fx-border-color: #3C3C3C;
+}
+
+#menuItems-pane{
+    -fx-border-style: solid;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-color: #3C3C3C;
+    -fx-background-color: #2F2F30;
+}
+
+#action-buttons{            /*undo, redo, copy, paste, cut buttons*/
+    -fx-background-color: null;
+    -fx-padding: 0;
+}
+
+#undo-action{
+    -fx-background-color: null;
+    -fx-padding: 0;
+}
+
+#undo-action:hover{
+    -fx-background-color: #444445;
+    -fx-background-radius: 5;
+}
+
+#action-buttons:hover{
+    -fx-background-color: #444445;
+}
