@@ -11,7 +11,6 @@ jDeas is a text editor with a modern UI design. It's capable of running java and
 - CSS
 - Java
 - IntelliJ IDEA
-- <a href = "www.google.com"> link<a>
 
 ## How to use
 ### Installation
