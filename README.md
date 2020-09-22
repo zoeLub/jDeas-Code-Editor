@@ -1,5 +1,5 @@
 # jDeas
-![Screenshot](https://drive.google.com/file/d/1G4L0SXpsERqm-bG7jQwDB6CG2yYAEawG/view?usp=sharing "Screenshot")
+[Preview Image](https://drive.google.com/file/d/1G4L0SXpsERqm-bG7jQwDB6CG2yYAEawG/view?usp=sharing)
 > Creativity is just connecting things
 ---
 ## Description
